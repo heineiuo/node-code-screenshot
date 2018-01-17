@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+const C = require('../')
+
+console.log(C.hl.parse('<div/>', 'html'))
