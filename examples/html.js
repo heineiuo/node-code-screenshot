@@ -3,6 +3,7 @@
 const fs = require('fs')
 const path = require('path')
 const Screenshot = require('..')
+const measureFullText = require('../lib/measureFullText')
 
 const text = `<!DOCTYPE html>
 <html>
@@ -28,10 +29,7 @@ const text = `<!DOCTYPE html>
 
 const draw1 = async () => {
   try {
-    let screenshot = new Screenshot({
-      width: 1200,
-      height: 1200,
-    })
+    let screenshot = new Screenshot(await measureFullText(text, { minWidth: 1000 }))
     await screenshot.drawText(text, 'html')
     await screenshot.writeFile(path.resolve(__dirname, 'html.png'))
     console.log("wrote out the png file to out.png");
