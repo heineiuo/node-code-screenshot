@@ -1,6 +1,6 @@
 {
   "name": "code-screenshot",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Take screenshot for code by node.js Edit",
   "main": "index.js",
   "scripts": {
@@ -34,6 +34,7 @@
   "files": [
     "lib",
     "bin",
+    "themes",
     "index.js",
     "README.md"
   ]
