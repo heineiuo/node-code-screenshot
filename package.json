@@ -1,7 +1,7 @@
 {
   "name": "code-screenshot",
-  "version": "0.0.4",
-  "description": "Take screenshot for code by node.js Edit",
+  "version": "0.0.5",
+  "description": "Take screenshot for code by node.js",
   "main": "index.js",
   "scripts": {
     "test": "jest"
